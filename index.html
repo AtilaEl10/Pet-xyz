@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <!--Bootstrap 5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@500&display=swap" rel="stylesheet"> 
+    <!--Estilo CSS-->
+    <link rel="stylesheet" href="src/assets/css/style.css">
+
+    <title>Pet-XYZ</title>
+  </head>
+
+  <body class="m-5">
+    <div class="container">
+      <div class="col-12">
+        <div class="mx-auto text-center">
+          <img src="src/assets/img/conejo-perro-gato.jpg" alt="animales" class="img-fluid">
+          <h2 class="my-3 fw-bold">Consulta Veterinaria</h2>
+        </div>
+
+      <div class="bg-light px-5 py-4">
+        <label class="mb-1">Nombre del Dueño</label>
+        <input type="text" id="nombreDuenno" class="form-control mb-3">
+  
+        <label class="mb-1">Número Telefonico</label>
+        <input type="number" id="telefono" class="form-control mb-3">
+  
+        <label class="mb-1">Lugar de Residencia</label>
+        <input type="text" id="direccion" class="form-control mb-3">
+  
+        <label class="mb-1">Nombre de la Mascota</label>
+        <input type="text" id="nombreMascota" class="form-control mb-3">
+        
+        <label class="mb-1">Tipo de Mascota</label>
+        <select class="form-control mb-3" id="tipoMascota">
+          <option value="">Seleccione</option>
+          <option value="perro">Perro</option>
+          <option value="gato">Gato</option>
+          <option value="conejo">Conejo</option>
+        </select>
+        
+        <label class="mb-1">Motivo de la consulta</label>
+        <textarea class="form-control" id="motivo" rows="5"></textarea> 
+  
+        <div class="row my-5">
+          <div class="col-6 mx-auto text-center d-grid gap-2">
+            <button class="btn btn-info text-white" type="button" id="boton">Agregar</button>
+          </div>
+        </div>
+
+        <div class="text-center my-5 border shadow">
+          Datos Agregados
+          <div id="mensaje"></div>
+        </div>
+      </div>
+
+    </div>
+    <script src="src/assets/js/script.js"></script>
+  </body>
+</html>
